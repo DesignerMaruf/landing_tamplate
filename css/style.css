@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.full-page {
+    max-width: 1480px;
+    margin: auto;
+}
+
+header {
+    background: #0b0d19;
+    color: #f4f4f4;
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+}
+
+.text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.text .display-4 {
+    font-weight: 700;
+}
+
+.text button {
+    overflow: hidden;
+    margin-top: 50px;
+
+}
+
+.hero-img {
+    background: url(img/hero-bg-top.svg) no-repeat center;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hero-img .btn {
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.mobile {
+    position: relative;
+    text-align: center;
+    top: -300px;
+    overflow: hidden;
+}
+
+.bg-style img,
+.left-style img,
+.right-style img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto !important;
+    height: auto;
+    max-width: 300% !important;
+    overflow: hidden;
+}
+
+.bg-phone {
+    position: relative;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    z-index: 1;
+    top: -300px;
+}
+
+
+.phone {
+    position: relative;
+    width: 310px;
+    height: auto;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.left-style img {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+}
+
+.phone-left {
+    position: relative;
+    max-width: 300px;
+    z-index: 999;
+}
+
+.phone-text {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+.col-2-left,
+.col-2-right {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 300px;
+    margin-top: 100px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 24px;
+    color: #6b7a90;
+    margin-top: 10px;
+
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.phone-right {
+    position: relative;
+    max-width: 300px;
+}
+
+.right-style img {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    clear: both;
+}
+
+.svg-right {
+    margin-left: 100px;
+}
+
+/*============
+    FOOTER
+==================*/
+footer {
+    background: #0b0d19;
+    color: #f4f4f4;
+    width: 100%;
+    margin: auto;
+}
+
+.footer-img {
+    background: url(img/footer-bg.svg) no-repeat center;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+
+
+hr {
+    background: #444;
+}
+
+.copyright {
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.copyright p {
+    color: #6B7A90;
+    font-size: 18px;
+}
+
+.social-icon {
+    display: inline-block;
+    float: right;
+
+}
+
+.icon {
+    display: block;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul {
+    clear: both;
+}
+
+ul li a {
+    padding: 10px 5px;
+    margin: 10px;
+    color: #6B7A90;
+
+}
+
+.icon a {
+    text-align: center;
+    padding: 10px 30px;
+    margin-left: 30px
+}
+
+/*==============
+    RESPONSIVE CODE
+====================*/
+@media (max-width:1580px) {
+
+    .col-2-left,
+    .col-2-right {
+        grid-column-gap: 50px;
+    }
+}
+
+@media (max-width:1180px) {
+
+    .col-2-left,
+    .col-2-right {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 150px;
+        width: 50%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .phone-text {
+        text-align: center;
+    }
+
+    .mobile {
+        top: -200px;
+    }
+}
+
+@media (max-width:680px) {
+    .text .display-4 {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .text p {
+
+        font-size: 22px;
+        color: #6b7a90;
+        margin-top: 20px;
+
+    }
+
+    .text {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .col-2-left,
+    .col-2-right {
+        width: 100%;
+        margin: auto;
+        grid-column-gap: 0;
+        padding: 10px;
+    }
+
+    .social-icon {
+        float: none;
+
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .mobile {
+        top: -150px;
+    }
+}
+
+@media (max-width:480px) {
+    .text {
+        padding: 100px 20px;
+    }
+
+    .mobile {
+        top: -100px;
+    }
+
+}
